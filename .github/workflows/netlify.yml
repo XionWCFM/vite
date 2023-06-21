@@ -1,0 +1,15 @@
+name: client
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Install dependencies
+        run: npm install 
+        working-directory: /
+      - name: Build
+        run: npm run build
+        working-directory: /
