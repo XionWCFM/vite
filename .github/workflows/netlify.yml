@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Install dependencies
         run: npm install 
-        working-directory: /
+        working-directory: ./
       - name: Build
         run: npm run build
-        working-directory: /
+        working-directory: ./
